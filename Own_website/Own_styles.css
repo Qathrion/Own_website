@@ -1,0 +1,55 @@
+/*  . = class,    # = id, nothing before it when its an element of the code */
+body {
+    background-image: url(Wooden-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+}
+
+.food-name {
+    text-align: center;
+    font-size: 40px;
+}
+
+.resepti {
+    background-color:white;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    padding: 5px 30px;
+    box-shadow: inset 5px 5px 5px grey;
+    margin: 20px auto;
+    width: 60vw;
+}
+
+#center {
+    font-style: bold;
+    text-align: center;
+}
+
+#table-col-1 {
+    width: 60px;
+}
+
+#table-col-2 {
+    width: 150px;
+}
+
+table {
+    width: 800px;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 1px auto;
+}
+#table-title {
+    text-align: center;
+}
