@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!--Update this to change the website's name-->
+    <meta name="description" content="Kevin's Mega list website " />
+
+    <title>Kevin's Mega List Website</title>
+    <!--Linking to the css page for styling-->
+    <link rel="stylesheet" href="Own_styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Welcome to Kevin's Mega List Website!</h1>
+        <!--Here comes the menu/navbar-->
+        <!--change menu with a dropdown https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+        <nav class="menu-bar">
+            <div class="menu-div">
+                <ul>
+                    <li class="menu-list"><a class="menu-link" href="#Home">Home</a></li>
+                    <li class="menu-list"><a class="menu-link" href="#Recipes">Recipes</a></li>
+                    <li class="menu-list"><a class="menu-link" href="#Pictures">Pictures</a></li>
+                    <li class="menu-list"><a class="menu-link" href="#Lists">Lists</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="body-default">
+        <!--Here are the links to the different recipes-->
+        <section>
+            <!--This will be a sub menu for the recipes option in the menu-->
+            <ul>
+                <li><a href="#Mustikkapiirakka">Mustikkapiirakka</a></li>
+                <li><a href="#Banana bread">Banana bread</a></li>
+            </ul>
+        </section>
+        <!--This sections contains all recipes-->
+        <section class="all-recipes-container">
+            <!--This is where a recipe starts-->
+            <section class="resepti">
+                <h2 class="food-name" id="Mustikkapiirakka">Mustikkapiirakka</h2>
+                <section>
+                    <h3 id="center">Ainekset</h3>
+                    <!--Table(s) for the ingredients-->
+                    <p id="table-title">Pohja:</p>
+                    <table>
+                        <!--With this you can adjust a column at a time-->
+                        <colgroup>
+                            <col id="table-col-1" />
+                            <col id="table-col-2" />
+                            <col id="table-col-3" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                                <th>Ingredient</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 dl</td>
+                                <td>Sokeria</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2½ dl</td>
+                                <td>Vehnäjauhoja</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1 tl</td>
+                                <td>Leivinjauhetta</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>100 g</td>
+                                <td>Margariinia</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1 rkl</td>
+                                <td>Kylmää vettä</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br>
+                    <p id="table-title">Täyte:</p>
+                    <!--2nd table starts here-->
+                    <table>
+                        <!--With this you can adjust a column at a time-->
+                        <colgroup>
+                            <col id="table-col-1" />
+                            <col id="table-col-2" />
+                            <col id="table-col-3" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                                <th>Ingredient</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>200 g</td>
+                                <td>Mustikoita</td>
+                                <td>Pakastettu</td>
+                            </tr>
+                            <tr>
+                                <td>1 tl</td>
+                                <td>Perunajauhoja</td>
+                                <td>2 tl oli liikkaa</td>
+                            </tr>
+                            <tr>
+                                <td>200 g</td>
+                                <td>Kermaviiliä 10%</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Kananmuna</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1/2 dl</td>
+                                <td>Sokeria</td>
+                                <td>Melkein 1 dl puolukoille</td>
+                            </tr>
+                            <tr>
+                                <td>1 tl</td>
+                                <td>Vaniljasokeria</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Instructions for the recipe start here-->
+                    <h4 id="center">Ohjeet:</h4>
+                    <p>Huom! Pohja pitää tehdä etukäteen. Se on jääkaapissa 30min.</p>
+                    <p>Voit tehdä piirakan myös tuoreista mustikoista, jolloin marjojen joukkoon ei tarvitse lisätä
+                        perunajauhoja.</p>
+                    <figure>
+                        <figcaption id="center">Pohja:</figcaption>
+                        <ol>
+                            <li>Sekoita kulhossa ensimmäiseksi sokeri, vehnäjauhot ja leivinjauhe.</li>
+                            <li>Lisää voi ja nypi taikina murumaiseksi seokseksi.</li>
+                            <li>Lisää vesi.</li>
+                            <li>Painele taikina tasaiseksi</li>
+                            <li>Kääri kelmuun ja anna levätä jääkaapissa 30 min ennen leipomista.</li>
+                            <li>Kauli tai painele taikina ø 28 cm:n piirakkavuoan pohjalle ja reunoille.</li>
+                        </ol>
+                    </figure>
+                    <figure>
+                        <figcaption id="center">Täyte:</figcaption>
+                        <ol>
+                            <li>Uuni 200°.</li>
+                            <li>Sekoita perunajauhot siivilän läpi jäisten marjojen joukkoon kulhossa. Ripottele marjat
+                                pohjalle.</li>
+                            <li>Sekoita samassa kulhossa kermaviili, muna, sokeri ja vaniljasokeri. Kaada seos marjojen
+                                päälle.</li>
+                            <li>Paista uunin alatasolla noin 35 minuuttia. Jos reunat alkavat tummua liikaa, voit
+                                paiston loppuvaiheessa peittää piirakan kevyesti foliolla. Anna piirakan jäähtyä ennen
+                                tarjoamista.</li>
+                        </ol>
+                    </figure>
+                </section>
+            </section>
+            <!--This is where a recipe ends-->
+            <section class="resepti">
+                <h2 class="food-name" id="Banana bread">Banana bread</h2>
+                <section>
+                    <h3 id="center">Ainekset</h3>
+                    <!--Table(s) for the ingredients-->
+                    <table>
+                        <!--With this you can adjust a column at a time-->
+                        <colgroup>
+                            <col id="table-col-1" />
+                            <col id="table-col-2" />
+                            <col id="table-col-3" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                                <th>Ingredient</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 cup</td>
+                                <td>Sugar</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>½ cup</td>
+                                <td>Margarine</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Eggs</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mashed banana</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2 cups</td>
+                                <td>Flour</td>
+                                <td>Maybe 1 2/3 cups next time</td>
+                            </tr>
+                            <tr>
+                                <td>1 tsp</td>
+                                <td>Baking soda</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Instructions for the recipe start here-->
+                    <h4 id="center">Instructions:</h4>
+                    <p>Store in the refrigerator or freezer</p>
+                    <ol>
+                        <!--Numbered instructions go here-->
+                        <li>Beat sugar and margarine in a bowl until smooth.</li>
+                        <li>Beat in eggs, then bananas.</li>
+                        <li>Add flour and baking soda, stirring just until combined.</li>
+                        <li>Pour into the prepared pan.</li>
+                        <li>Bake half at a time in the airfryer at 160° for about 40 minutes then turn it around and put
+                            it for another 5 minutes.</li>
+                        <li>It is done when the fork comes out clean when you stab it in the center.</li>
+                        <li>Reapply butter to the basket.</li>
+                        <li>Repeat step 5-6.</li>
+                        <li>Remove from the pan and let cool.</li>
+                    </ol>
+                </section>
+            </section>
+        </section>
+        <!--This is where a recipe ends-->
+    </main>
+    <!--Space for Copyright, links and other general info-->
+    <footer>
+        <small>Copyright Kevin 2025</small>
+    </footer>
+</body>
+
+</html>
