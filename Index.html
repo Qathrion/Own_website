@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<!--
+To do:
+- Table adjusts to screen
+- Dropdown menu
+- Auto replace words when renaming?
+-->
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <!--Update this to change the website's name-->
     <meta name="description" content="Kevin's Mega list website " />
+
+    <meta name="author" content="Kevin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Kevin's Mega List Website</title>
     <!--Linking to the css page for styling-->
@@ -20,8 +28,8 @@
             <div class="menu-div">
                 <ul>
                     <li class="menu-list"><a class="menu-link" href="#Home">Home</a></li>
-                    <li class="menu-list"><a class="menu-link" href="#Recipes">Recipes</a></li>
-                    <li class="menu-list"><a class="menu-link" href="#Pictures">Pictures</a></li>
+                    <li class="menu-list"><a class="menu-link" href="index.html">Recipes</a></li>
+                    <li class="menu-list"><a class="menu-link" href="photos.html">Pictures</a></li>
                     <li class="menu-list"><a class="menu-link" href="#Lists">Lists</a></li>
                 </ul>
             </div>
@@ -144,7 +152,7 @@
                         perunajauhoja.</p>
                     <figure>
                         <figcaption id="center">Pohja:</figcaption>
-                        <ol>
+                        <ol id="ol-recipe">
                             <li>Sekoita kulhossa ensimmäiseksi sokeri, vehnäjauhot ja leivinjauhe.</li>
                             <li>Lisää voi ja nypi taikina murumaiseksi seokseksi.</li>
                             <li>Lisää vesi.</li>

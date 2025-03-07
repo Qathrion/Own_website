@@ -1,0 +1,40 @@
+/*  . = class,    # = id, nothing before it when its an element of the code */
+* {
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: azure;
+}
+
+.menu-bar {
+    background-color: rgb(151, 226, 226);
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.menu-list {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-right: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+body {
+    background-image: url(assets/images/bananas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
