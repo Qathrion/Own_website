@@ -7,29 +7,63 @@
     text-align: center;
     background-color: azure;
 }
+/* === MENU STARTS HERE === */
 
+/* Centers the content and more */
 .menu-bar {
-    background-color: rgb(151, 226, 226);
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    border-top: 1px solid black;
-    padding-bottom: 5px;
-}
-
-.menu-list {
-    list-style: none;
-    display: inline-block;
-}
-
-.menu-link {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: #5ba6d8;
+  }
+  
+.menu-bar a {
+    float: left;
     color: black;
-    font-size: 30px;
-    margin-right: 25px;
-    font-weight: bold;
-    border-bottom: 2px solid black;
-}
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ /* Positions the dropdown menu below the parent */ 
+.dropdown-recipes {
+    position: relative;
+    display: inline-block;
+  }
+ 
+  
+ /* What happens when you hover over it */ 
+.menu-bar a:hover, .dropdown-recipes:hover .menu-recipes {
+    background-color: azure;
+    box-shadow: inset 0px -20px 24px -33px #000000;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: azure;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 0px rgba(17, 17, 17, 0.2);
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #5ba6d8;
+  }
+  
+ /* Puts the correct dropdown over the menu */ 
+.dropdown-recipes:hover .dropdown-content {
+    display: block;
+  }
+
+/* === MENU ENDS HERE === */
 
 body {
     background-image: url(assets/images/bananas.jpg);

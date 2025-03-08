@@ -12,23 +12,25 @@ To do:
     <title>Kevin's Mega List Website</title>
     <!--Linking to the css page for styling-->
     <link rel="stylesheet" href="photos-css.css" />
+
+        <!--This puts the menu bar in place-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <header>
         <h1 class="title">Welcome to Kevin's Mega List Website!</h1>
-        <!--Here comes the menu/navbar-->
-        <!--change menu with a dropdown https://www.w3schools.com/howto/howto_css_dropdown.asp -->
-        <nav class="menu-bar">
-            <div class="menu-div">
-                <ul>
-                    <li class="menu-list"><a class="menu-link" href="#Home">Home</a></li>
-                    <li class="menu-list"><a class="menu-link" href="index.html">Recipes</a></li>
-                    <li class="menu-list"><a class="menu-link" href="photos.html">Pictures</a></li>
-                    <li class="menu-list"><a class="menu-link" href="#Lists">Lists</a></li>
-                </ul>
-            </div>
-        </nav>
+ <!--Here starts the menu/navbar-->
+ <div id="nav-placeholder">
+
+ </div>
+ 
+ <script>
+ $(function(){
+   $("#nav-placeholder").load("menu.html");
+ });
+ </script>
+ <!--Here ends the menu/navbar-->
     </header>
     <main id="body-default">
 
