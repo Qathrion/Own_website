@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
+  <!--
 To do:
 - Add images and put them in a flexbox
 -->
-<head>
-    <meta charset="UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <!--Eczar font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
     <!--Update this to change the website's name-->
     <meta name="description" content="Kevin's Mega list website " />
+
+    <meta name="author" content="Kevin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Kevin's Website</title>
     <!--Linking to the css page for styling-->
     <link rel="stylesheet" href="contact-styles.css" />
 
-        <!--This puts the menu bar in place-->
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
+    <!--This puts the menu bar in place-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Welcome to Kevin's Website!</h1>
- <!--Here starts the menu/navbar-->
- <div id="nav-placeholder">
+      <h1>Welcome to Kevin's Website!</h1>
+      <!--Here starts the menu/navbar-->
+      <div id="nav-placeholder"></div>
 
- </div>
- 
- <script>
- $(function(){
-   $("#nav-placeholder").load("menu.html");
- });
- </script>
- <!--Here ends the menu/navbar-->
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
+      <!--Here ends the menu/navbar-->
     </header>
     <main>
-        <section class="contact-form">
-            <h3>Give me your information.</h3>
-            <h8>I promise that I won't sell your information!</h8>
-            <form>
-                <div>
-                    <div>
-                    <label for="name">Full name here please:</label>
-                </div>
-                    <input type="text" id="name" placeholder="Your full name" />
-                </div>
-                <div>
-                    <div>
-                    <label for="email">Email goes here:</label>
-                </div>
-                    <input type="email" id="email" placeholder="banana.bread@msn.com" />
-                </div>
-                <div>
-                    <div>
-                    <label for="date">Date of Birth </label>
-                </div>
-                    <input id="date" type="date" />
-                </div>
-                <div>
-                    <div>
-                    <label for="age">Your age:</label>
-                </div>
-                    <input type="number" id="age" placeholder="Your age" />
-                </div>
-                <div>
-                    <div>
-                    <label for="message">Tell me all about yourself:</label>
-                </div>
-                    <textarea rows="10" cols="50">         
-                    </textarea>
-                </div>
-                <input type="Submit" value="Submit your information to me" formenctype="multipart/form-data">
-            </form>
-        </section>
+      <section class="contact-form">
+        <h3>Give me your information.</h3>
+        <form>
+          <div class="input-flex">
+          <div class="labels">
+            <div>
+              <label for="name">Full name:</label>
+            </div>
+            <input type="text" id="name" placeholder="Your full name" />
+          </div>
+          <div class="labels">
+            <div>
+              <label for="email">Email:</label>
+            </div>
+            <input type="email" id="email" placeholder="banana.bread@msn.com" />
+          </div>
+          <div class="labels">
+            <div>
+              <label for="date">Date of Birth:</label>
+            </div>
+            <input id="date" type="date" />
+          </div>
+          <div class="labels">
+            <div>
+              <label for="age">Your age:</label>
+            </div>
+            <input type="number" id="age" placeholder="Your age" />
+          </div>
+          <div>
+            <div>
+              <label for="message">Tell me all about yourself:</label>
+            </div>
+            <textarea rows="10" cols="50"> </textarea>
+          </div>
+        </div>
+          <input
+            type="Submit"
+            value="Submit your information to me"
+            formenctype="multipart/form-data"
+          />
+          <h6>I promise that I won't sell your information!</h6>
+        </form>
+      </section>
     </main>
     <!--Space for Copyright, links and other general info-->
     <footer>
-        <small>Copyright Kevin 2025</small>
+      <small>Copyright Kevin 2025</small>
     </footer>
-</body>
-
+  </body>
 </html>

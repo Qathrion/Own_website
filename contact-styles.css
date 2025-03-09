@@ -1,7 +1,12 @@
 /*  . = class,    # = id, nothing before it when its an element of the code */
+
+/* === THIS ADJUSTS THE BASIS OF EVERYTHING === */
 * {
     margin: 0;
-    font-family: Baskerville Old Face;
+}
+
+html {
+  font-family: "Eczar";
 }
 
 /* HEADER */
@@ -69,27 +74,50 @@ header h1 {
 
 /* === MENU ENDS HERE === */
 
+/* === EVERYTHING IN THE BODY === */
+
 body {
     background-color: white;
 }
 
 /* Gib info */
 .contact-form h3 {
-  font-size: 40px;
+  font-size: 35px;
+  text-align: center;
 }
  
-/* (NOT) sell info */
-.contact-form h8 {
-  font-size: 10px;
-  font-style: italic;
-}
-
 .contact-form {
-  text-align: center;
   border: 5px solid black;
   border-radius: 25px;
-  padding: 20px 20px;
+  padding: 20px 10px;
   box-shadow: inset 5px 5px 5px grey;
   margin: 20px auto;
-  width: 40vw;
+  width: 500px;
+}
+
+/* CONTINUE HERE */
+
+.input-flex {
+  display: flex;
+}
+
+.labels {
+  border: 2px solid red;
+  width: 200px;
+  height: px;
+  margin: auto;
+}
+
+/* (NOT) sell info */
+.contact-form h6 {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  color: rgb(194, 194, 194);
+}
+
+/* FOOTER */
+footer  {
+  margin: 10px auto;
+  text-align: center;
 }

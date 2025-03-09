@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+  font-family: "Eczar";
+}
+
 /* HEADER */
 header h1 {
     text-align: center;
@@ -75,5 +79,11 @@ body {
 /* UNDER CONSTRUCTION TEXT */
 .construction {
   font-size: 100px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer  {
+  margin: 10px auto;
   text-align: center;
 }

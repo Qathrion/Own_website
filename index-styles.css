@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    font-family: "Eczar";
+  }
+
 /* HEADER */
 header h1 {
     text-align: center;
