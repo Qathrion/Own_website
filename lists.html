@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+To do:
+- Add images and put them in a flexbox
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--Update this to change the website's name-->
+    <meta name="description" content="Kevin's Mega list website " />
+
+    <title>Kevin's Website</title>
+    <!--Linking to the css page for styling-->
+    <link rel="stylesheet" href="lists-styles.css" />
+
+    <!--This puts the menu bar in place-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Kevin's Website!</h1>
+      <!--Here starts the menu/navbar-->
+      <div id="nav-placeholder"></div>
+
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
+      <!--Here ends the menu/navbar-->
+    </header>
+    <main id="body-default">
+      <h1 class="construction">UNDER CONSTRUCTION!</h1>
+    </main>
+    <!--Space for Copyright, links and other general info-->
+    <footer>
+      <small>Copyright Kevin 2025</small>
+    </footer>
+  </body>
+</html>
