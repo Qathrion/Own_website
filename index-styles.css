@@ -86,11 +86,24 @@ body {
 
 /* === RECIPES === */
 
+/* Just the food name */
 .food-name {
     text-align: center;
     font-size: 40px;
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 5px grey;
+    width: 20vw;
+    background-color: azure;
 }
 
+/* Centers the titles in the recipe */
+#center {
+    font-style: bold;
+    text-align: center;
+}
+
+/* The box that contains the individual recipe */
 .resepti {
     background-color: white;
     border: 5px solid black;
@@ -98,30 +111,20 @@ body {
     padding: 20px 20px;
     box-shadow: inset 5px 5px 5px grey;
     margin: 20px auto;
-    width: 60vw;
-}
-
-#ol-recipe li {
-    display: inline-block;
-}
-
-#center {
-    font-style: bold;
-    text-align: center;
+    width: 50vw;
 }
 
 /* === TABLE IN RECIPE === */
-
 #table-col-1 {
-    width: 60px;
+    width: 4vw;
 }
 
 #table-col-2 {
-    width: 150px;
+    width: 8vw;
 }
 
 table {
-    width: 800px;
+    width: 30vw;
 }
 
 table,
@@ -135,10 +138,19 @@ td {
 
 #table-title {
     text-align: center;
+    margin: 10px 0 auto;
+    font-weight: bold;
+}
+
+/* Instructions for the recipe */
+.instructions-section {
+    margin: auto 5vw;
 }
 
 /* FOOTER */
 footer  {
+    border-top: 1px solid black;
     margin: 10px auto;
     text-align: center;
+    width: 35vw;
 }

@@ -18,24 +18,39 @@ To do:
     <!--Linking to the css page for styling-->
     <link rel="stylesheet" href="photos-styles.css" />
 
-        <!--This puts the menu bar in place-->
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--This puts the menu bar in place COMMENT THIS AT WORK
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    This puts the menu bar in place COMMENT THIS AT WORK-->
 </head>
 
 <body>
     <header>
         <h1>Welcome to Kevin's Website!</h1>
- <!--Here starts the menu/navbar-->
- <div id="nav-placeholder">
+      <!--Here starts the menu/navbar COMMENT THIS AT WORK
+      <div id="nav-placeholder"></div>
 
- </div>
- 
- <script>
- $(function(){
-   $("#nav-placeholder").load("menu.html");
- });
- </script>
- <!--Here ends the menu/navbar-->
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
+      Here ends the menu/navbar COMMENT THIS AT WORK-->
+
+      <!--Here starts the menu/navbar COMMENT THIS AT HOME-->      
+      <nav class="menu-bar">
+        <a id="menu-home" href="home.html">Home</a>
+               <div class="dropdown-recipes">
+                <a href="index.html">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
+                        <a href="index.html#Banana bread">Banana bread</a>
+                    </div>
+                </div>
+                <a href="photos.html">Pictures</a>
+                <a href="lists.html">Lists</a>
+               <a href="contact.html">Contact Form</a>
+    </nav>
+      <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
     </header>
     <main id="body-default">
         <h1 class="construction">UNDER CONSTRUCTION!</h1>

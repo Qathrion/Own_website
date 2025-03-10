@@ -7,39 +7,55 @@ To do:
 - Pages that open below for example the menu? Not having to copy code to all pages
 - Have the menu part of where youre currently at be a different color
 -->
+
 <head>
     <meta charset="utf-8" />
-        <!--Eczar font-->
-        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+    <!--Eczar font-->
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
     <!--Update this to change the website's name-->
     <meta name="description" content="Kevin's Mega list website " />
 
     <meta name="author" content="Kevin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Kevin's Website</title>
     <!--Linking to the css page for styling-->
     <link rel="stylesheet" href="index-styles.css" />
 
-    <!--This puts the menu bar in place-->
+    <!--This puts the menu bar in place COMMENT THIS AT WORK
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    This puts the menu bar in place COMMENT THIS AT WORK-->
 
 </head>
 
 <body>
     <header>
         <h1>Welcome to Kevin's Website!</h1>
- <!--Here starts the menu/navbar-->
-<div id="nav-placeholder">
+        <!--Here starts the menu/navbar COMMENT THIS AT WORK
+      <div id="nav-placeholder"></div>
 
-</div>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
+      Here ends the menu/navbar COMMENT THIS AT WORK-->
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("menu.html");
-});
-</script>
-<!--Here ends the menu/navbar-->
+        <!--Here starts the menu/navbar COMMENT THIS AT HOME-->
+        <nav class="menu-bar">
+            <a id="menu-home" href="home.html">Home</a>
+            <div class="dropdown-recipes">
+                <a href="index.html">Recipes</a>
+                <div class="dropdown-content">
+                    <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
+                    <a href="index.html#Banana bread">Banana bread</a>
+                </div>
+            </div>
+            <a href="photos.html">Pictures</a>
+            <a href="lists.html">Lists</a>
+            <a href="contact.html">Contact Form</a>
+        </nav>
+        <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
     </header>
     <main id="body-default">
         <!--This sections contains all recipes-->
@@ -48,9 +64,9 @@ $(function(){
             <section class="resepti">
                 <h3 class="food-name" id="Mustikkapiirakka">Mustikkapiirakka</h3>
                 <section>
-                    <h3 id="center">Ainekset</h3>
+                    <h3 id="center">Ingredients</h3>
                     <!--Table(s) for the ingredients-->
-                    <p id="table-title">Pohja:</p>
+                    <p id="table-title">Bottom:</p>
                     <table>
                         <!--With this you can adjust a column at a time-->
                         <colgroup>
@@ -93,7 +109,7 @@ $(function(){
                             </tr>
                         </tbody>
                     </table>
-                    <p id="table-title">Täyte:</p>
+                    <p id="table-title">Filling:</p>
                     <!--2nd table starts here-->
                     <table>
                         <!--With this you can adjust a column at a time-->
@@ -143,13 +159,16 @@ $(function(){
                         </tbody>
                     </table>
                     <!--Instructions for the recipe start here-->
-                    <h4 id="center">Ohjeet:</h4>
-                    <p>Huom! Pohja pitää tehdä etukäteen. Se on jääkaapissa 30min.</p>
-                    <p>Voit tehdä piirakan myös tuoreista mustikoista, jolloin marjojen joukkoon ei tarvitse lisätä
-                        perunajauhoja.</p>
-                    <figure>
-                        <figcaption id="center">Pohja:</figcaption>
-                        <ol id="ol-recipe">
+                    <section class="instructions-section">
+                        <h3 id="center">Instructions:</h3>
+                        <ul>
+                            <li>Pohja pitää tehdä etukäteen. Se on jääkaapissa 30min.</li>
+                            <li>Voit tehdä piirakan myös tuoreista mustikoista, jolloin marjojen joukkoon ei tarvitse
+                                lisätä
+                                perunajauhoja.</li>
+                        </ul>
+                        <p id="center"><b>Bottom:</b></p>
+                        <ol>
                             <li>Sekoita kulhossa ensimmäiseksi sokeri, vehnäjauhot ja leivinjauhe.</li>
                             <li>Lisää voi ja nypi taikina murumaiseksi seokseksi.</li>
                             <li>Lisää vesi.</li>
@@ -157,9 +176,7 @@ $(function(){
                             <li>Kääri kelmuun ja anna levätä jääkaapissa 30 min ennen leipomista.</li>
                             <li>Kauli tai painele taikina ø 28 cm:n piirakkavuoan pohjalle ja reunoille.</li>
                         </ol>
-                    </figure>
-                    <figure>
-                        <figcaption id="center">Täyte:</figcaption>
+                        <p id="center"><b>Filling:</b></p>
                         <ol>
                             <li>Uuni 200°.</li>
                             <li>Sekoita perunajauhot siivilän läpi jäisten marjojen joukkoon kulhossa. Ripottele marjat
@@ -170,14 +187,14 @@ $(function(){
                                 paiston loppuvaiheessa peittää piirakan kevyesti foliolla. Anna piirakan jäähtyä ennen
                                 tarjoamista.</li>
                         </ol>
-                    </figure>
+                    </section>
                 </section>
             </section>
             <!--This is where a recipe ends-->
             <section class="resepti">
                 <h2 class="food-name" id="Banana bread">Banana bread</h2>
                 <section>
-                    <h3 id="center">Ainekset</h3>
+                    <h3 id="center">Ingredients</h3>
                     <!--Table(s) for the ingredients-->
                     <table>
                         <!--With this you can adjust a column at a time-->
@@ -227,7 +244,8 @@ $(function(){
                         </tbody>
                     </table>
                     <!--Instructions for the recipe start here-->
-                    <h4 id="center">Instructions:</h4>
+                    <section class="instructions-section">
+                    <h3 id="center">Instructions:</h4>
                     <p>Store in the refrigerator or freezer</p>
                     <ol>
                         <!--Numbered instructions go here-->
@@ -242,6 +260,7 @@ $(function(){
                         <li>Repeat step 5-6.</li>
                         <li>Remove from the pan and let cool.</li>
                     </ol>
+                </section>
                 </section>
             </section>
         </section>

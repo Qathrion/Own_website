@@ -2,7 +2,7 @@
 
 /* === THIS ADJUSTS THE BASIS OF EVERYTHING === */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
@@ -11,73 +11,74 @@ html {
 
 /* HEADER */
 header h1 {
-    text-align: center;
-    font-size: 50px;
-    background-color: azure;
+  text-align: center;
+  font-size: 50px;
+  background-color: azure;
 }
 
 /* === MENU STARTS HERE === */
 
 /* Centers the content and more */
 .menu-bar {
-    display: flex;
-    justify-content: center;
-    background-color: #5ba6d8;
-  }
-  
+  display: flex;
+  justify-content: center;
+  background-color: #5ba6d8;
+}
+
 .menu-bar a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
- /* Positions the dropdown menu below the parent */ 
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Positions the dropdown menu below the parent */
 .dropdown-recipes {
-    position: relative;
-    display: inline-block;
-  }
- 
-  
- /* What happens when you hover over it */ 
-.menu-bar a:hover, .dropdown-recipes:hover .menu-recipes {
-    background-color: azure;
-    box-shadow: inset 0px -20px 24px -33px #000000;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+
+/* What happens when you hover over it */
+.menu-bar a:hover,
+.dropdown-recipes:hover .menu-recipes {
+  background-color: azure;
+  box-shadow: inset 0px -20px 24px -33px #000000;
+}
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: azure;
-    min-width: 160px;
-    box-shadow: 0px 10px 16px 0px rgba(17, 17, 17, 0.2);
-  }
-  
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: azure;
+  min-width: 160px;
+  box-shadow: 0px 10px 16px 0px rgba(17, 17, 17, 0.2);
+}
+
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .dropdown-content a:hover {
-    background-color: #5ba6d8;
-  }
-  
- /* Puts the correct dropdown over the menu */ 
+  background-color: #5ba6d8;
+}
+
+/* Puts the correct dropdown over the menu */
 .dropdown-recipes:hover .dropdown-content {
-    display: block;
-  }
+  display: block;
+}
 
 /* === MENU ENDS HERE === */
 
 /* === EVERYTHING IN THE BODY === */
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 /* Gib info */
@@ -85,7 +86,7 @@ body {
   font-size: 35px;
   text-align: center;
 }
- 
+
 .contact-form {
   border: 5px solid black;
   border-radius: 25px;
@@ -93,19 +94,21 @@ body {
   box-shadow: inset 5px 5px 5px grey;
   margin: 20px auto;
   width: 500px;
+  text-align: center;
 }
 
 /* CONTINUE HERE */
-
+/* Uses flex box to align most labels and inputs in the contact form */
 .input-flex {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  margin-bottom: 10px;
 }
 
 .labels {
-  border: 2px solid red;
   width: 200px;
-  height: px;
-  margin: auto;
 }
 
 /* (NOT) sell info */
@@ -117,7 +120,7 @@ body {
 }
 
 /* FOOTER */
-footer  {
+footer {
   margin: 10px auto;
   text-align: center;
 }
