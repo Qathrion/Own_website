@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+To do:
+- Table adjusts to screen
+- Auto replace words when renaming?
+- Pages that open below for example the menu? Not having to copy code to all pages
+- Have the menu part of where youre currently at be a different color
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <!--Eczar font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Update this to change the website's name-->
+    <meta name="description" content="Kevin's Mega list website " />
+
+    <meta name="author" content="Kevin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kevin's Website</title>
+    <!--Linking to the css page for styling-->
+    <link rel="stylesheet" href="index-styles.css" />
+
+    <!--This puts the menu bar in place COMMENT THIS AT WORK
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    This puts the menu bar in place COMMENT THIS AT WORK-->
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Kevin's Website!</h1>
+      <!--Here starts the menu/navbar COMMENT THIS AT WORK
+      <div id="nav-placeholder"></div>
+
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("menu.html");
+        });
+      </script>
+      Here ends the menu/navbar COMMENT THIS AT WORK-->
+
+      <!--Here starts the menu/navbar COMMENT THIS AT HOME-->
+      <nav class="menu-bar">
+        <a id="menu-anchor" href="home.html">Home</a>
+        <div class="dropdown-recipes">
+          <a id="menu-anchor" href="index.html">Recipes</a>
+          <div class="dropdown-content">
+            <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
+            <a href="index.html#Banana bread">Banana bread</a>
+            <a href="index.html#Lasagne">Lasagne</a>
+          </div>
+        </div>
+        <a id="menu-anchor" href="photos.html">Pictures</a>
+        <a id="menu-anchor" href="lists.html">Lists</a>
+        <a id="menu-anchor" href="contact.html">Contact Form</a>
+      </nav>
+      <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
+    </header>
+    <main id="body-default">
+      <!--This sections contains all recipes-->
+      <section class="all-recipes-container">
+        <!--This is where Mustikkapiirakka recipe starts-->
+        <section class="resepti">
+          <h3 class="food-name" id="Mustikkapiirakka">Mustikkapiirakka</h3>
+          <section>
+            <h3 id="center">Ingredients</h3>
+            <!--Table(s) for the ingredients-->
+            <p id="table-title">Bottom:</p>
+            <table>
+              <!--With this you can adjust a column at a time-->
+              <colgroup>
+                <col id="table-col-1" />
+                <col id="table-col-2" />
+                <col id="table-col-3" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Ingredient</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 dl</td>
+                  <td>Sokeria</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2½ dl</td>
+                  <td>Vehnäjauhoja</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1 tl</td>
+                  <td>Leivinjauhetta</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>100 g</td>
+                  <td>Margariinia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1 rkl</td>
+                  <td>Kylmää vettä</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <p id="table-title">Filling:</p>
+            <!--2nd table starts here-->
+            <table>
+              <!--With this you can adjust a column at a time-->
+              <colgroup>
+                <col id="table-col-1" />
+                <col id="table-col-2" />
+                <col id="table-col-3" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Ingredient</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>200 g</td>
+                  <td>Mustikoita</td>
+                  <td>Pakastettu</td>
+                </tr>
+                <tr>
+                  <td>1 tl</td>
+                  <td>Perunajauhoja</td>
+                  <td>2 tl oli liikaa</td>
+                </tr>
+                <tr>
+                  <td>200 g</td>
+                  <td>Kermaviiliä 10%</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Kananmuna</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1/2 dl</td>
+                  <td>Sokeria</td>
+                  <td>Melkein 1 dl puolukoille</td>
+                </tr>
+                <tr>
+                  <td>1 tl</td>
+                  <td>Vaniljasokeria</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Instructions for the recipe start here-->
+            <section class="instructions-section">
+              <h3 id="center">Instructions:</h3>
+              <ul>
+                <li>Pohja pitää tehdä etukäteen. Se on jääkaapissa 30min.</li>
+                <li>
+                  Voit tehdä piirakan myös tuoreista mustikoista, jolloin
+                  marjojen joukkoon ei tarvitse lisätä perunajauhoja.
+                </li>
+              </ul>
+              <p id="center"><b>Bottom:</b></p>
+              <ol>
+                <li>
+                  Sekoita kulhossa ensimmäiseksi sokeri, vehnäjauhot ja
+                  leivinjauhe.
+                </li>
+                <li>Lisää voi ja nypi taikina murumaiseksi seokseksi.</li>
+                <li>Lisää vesi.</li>
+                <li>Painele taikina tasaiseksi</li>
+                <li>
+                  Kääri kelmuun ja anna levätä jääkaapissa 30 min ennen
+                  leipomista.
+                </li>
+                <li>
+                  Kauli tai painele taikina ø 28 cm:n piirakkavuoan pohjalle ja
+                  reunoille.
+                </li>
+              </ol>
+              <p id="center"><b>Filling:</b></p>
+              <ol>
+                <li>Uuni 200°.</li>
+                <li>
+                  Sekoita perunajauhot siivilän läpi jäisten marjojen joukkoon
+                  kulhossa. Ripottele marjat pohjalle.
+                </li>
+                <li>
+                  Sekoita samassa kulhossa kermaviili, muna, sokeri ja
+                  vaniljasokeri. Kaada seos marjojen päälle.
+                </li>
+                <li>
+                  Paista uunin alatasolla noin 35 minuuttia. Jos reunat alkavat
+                  tummua liikaa, voit paiston loppuvaiheessa peittää piirakan
+                  kevyesti foliolla. Anna piirakan jäähtyä ennen tarjoamista.
+                </li>
+              </ol>
+            </section>
+          </section>
+        </section>
+        <!--This is where Mustikkapiirakka recipe ends-->
+
+        <!--This is where Banana bread recipe starts-->
+        <section class="resepti">
+          <h2 class="food-name" id="Banana bread">Banana bread</h2>
+          <section>
+            <h3 id="center">Ingredients</h3>
+            <!--Table(s) for the ingredients-->
+            <table>
+              <!--With this you can adjust a column at a time-->
+              <colgroup>
+                <col id="table-col-1" />
+                <col id="table-col-2" />
+                <col id="table-col-3" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Ingredient</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 cup</td>
+                  <td>Sugar</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>½ cup</td>
+                  <td>Margarine</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Eggs</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mashed banana</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2 cups</td>
+                  <td>Flour</td>
+                  <td>Maybe 1 2/3 cups next time</td>
+                </tr>
+                <tr>
+                  <td>1 tsp</td>
+                  <td>Baking soda</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Instructions for the recipe start here-->
+            <section class="instructions-section">
+              <h3 id="center">Instructions:</h3>
+              <p>Store in the refrigerator or freezer</p>
+              <ol>
+                <!--Numbered instructions go here-->
+                <li>Beat sugar and margarine in a bowl until smooth.</li>
+                <li>Beat in eggs, then bananas.</li>
+                <li>
+                  Add flour and baking soda, stirring just until combined.
+                </li>
+                <li>Pour into the prepared pan.</li>
+                <li>
+                  Bake half at a time in the airfryer at 160° for about 40
+                  minutes then turn it around and put it for another 5 minutes.
+                </li>
+                <li>
+                  It is done when the fork comes out clean when you stab it in
+                  the center.
+                </li>
+                <li>Reapply butter to the basket.</li>
+                <li>Repeat step 5-6.</li>
+                <li>Remove from the pan and let cool.</li>
+              </ol>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!--This is where Banana bread recipe ends-->
+
+      <!--This is where Lasagne recipe starts-->
+      <section class="resepti">
+        <h2 class="food-name" id="Lasagne">Lasagne</h2>
+        <section>
+            <h3 id="center">Ingredients</h3>
+            <!--Table(s) for the ingredients-->
+            <p id="table-title">Jauhelihakastike:</p>
+            <table>
+              <!--With this you can adjust a column at a time-->
+              <colgroup>
+                <col id="table-col-1" />
+                <col id="table-col-2" />
+                <col id="table-col-3" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Ingredient</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4 dl</td>
+                  <td>Soijarouhetta</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2 kpl</td>
+                  <td>Valkosipulinkynttä</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1 kpl</td>
+                  <td>Sipulia </td>
+                  <td>When we really want  <!--Remember the farts!--></td>
+                </tr>
+                <tr>
+                  <td>1 rkl</td>
+                  <td>Rypsiöljyä</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>70 g</td>
+                  <td>Tomaattipyreetä</td>
+                  <td>1 prk</td>
+                </tr>
+                <tr>
+                    <td>2 tl</td>
+                    <td>Basilikaa</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2 tl</td>
+                    <td>Timjamia</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1 tl</td>
+                    <td>Suolaa</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>0.25 tl</td>
+                    <td>Rouhittua mustapippuria</td>
+                    <td>On liikaa</td>
+                  </tr>
+                  <tr>
+                    <td>500 g</td>
+                    <td>Tomaattimurskaa</td>
+                    <td>1 prk</td>
+                  </tr>
+                  <tr>
+                    <td>3 dl</td>
+                    <td>Vettä</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1 kpl</td>
+                    <td>Kasvisliemikuutio</td>
+                    <td></td>
+                  </tr>
+              </tbody>
+            </table>
+            <p id="table-title">Juustokastike:</p>
+            <!--2nd table starts here-->
+            <table>
+              <!--With this you can adjust a column at a time-->
+              <colgroup>
+                <col id="table-col-1" />
+                <col id="table-col-2" />
+                <col id="table-col-3" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Ingredient</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 rkl 30/g</td>
+                  <td>Voita tai margariinia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1 dl</td>
+                  <td>Vehnäjauhoja</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1 l</td>
+                  <td>Maitoa</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>250 g</td>
+                  <td>Sulatejuustoa</td>
+                  <td>1 pkt</td>
+                </tr>
+                <tr>
+                  <td>0.25 tl</td>
+                  <td>Valkopippuria</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>0.75 tl</td>
+                  <td>Suolaa</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Instructions for the recipe start here-->
+            <section class="instructions-section">
+                <h3 id="center">Additional:</h3>
+                <ul>
+                  <li>12 kpl Lasagnelevyä (Puolikas paketti Rainbow Lasagne Pasta No. 109, 500g ei riitä koko vuokaan kunnollisella määrällä soijarouhekastiketta.)</li>
+                  <li>
+                    40 g(1 dl) Juustoraastetta (170g on ihan valtava määrä.)
+                  </li>
+                </ul>
+              <h3 id="center">Instructions:</h3>
+              <ul>
+                <li>Jos raastetaan juusto itse, niin sen voi tehdä valmiiksi jo aikaisemmin.</li>
+              </ul>
+              <p id="center"><b>Juustokastike:</b></p>
+              <ol>
+                <li>
+                    Pese kädet.
+                </li>
+                <li>Kuori ja hienonna sipulit ja valkosipulit.</li>
+                <li>Kuumenna öljy kattilassa tai kasarissa.</li>
+                <li>(Optional) Kuullota (sipuleita?) hetki.</li>
+                <li>
+                    Lisää soijarouhe, tomaattipyree, tomaattimurska, mausteet, vesi ja liemikuutio. Anna kastikkeen kiehua hiljalleen juustokastikkeen valmistuksen ajan.
+                </li>
+                </ol>
+                <p id="center"><b>Jauhelihakastike + muut:</b></p>
+                <ol>
+                <li>
+                    Sulata rasva pinnoitetussa kattilassa. (Älä käytä lastaa, vaan vispilää tmv.) 
+                </li>
+                <li>Lisää vähän maitoa kattilaan ja anna sen lämmetä. Lisää osa jauhoista, lisää maitoa, lisää jauhoja ja maitoa, kunnes jauhot on kaikki kattilassa, sekoita ja anna kiehahtaa.Lisää loput maidosta vähän kerrallaan koko ajan sekoittaen. </li>
+                <li>Anna kastikkeen kiehua muutama minuutti, kunnes se sakenee. Se ei tosin sakene, joten lisää vaan sulatejuusto palasina. Sekoita, kunnes juusto on sulanut. (Paitsi että sulatejuusto ei sula melkeen millään. Koko homma palaa nelosella pohjaan ennen kuin sulatejuusto sulaa ja kolmosella sille ei tapahdu oikein mitään.)</li>
+                <li>Mausta suolalla (0,75 tl) ja valkopippurilla (0,25 tl).</li>
+                <li>Säädä uuni 200 asteeseen.</li>
+                <li>Kokoa lasagne vuokaan.</li>
+                <li>Levitä alimmaksi kerros soijarouhekastiketta</li>
+                <li>Laita päälle kerros lasagnelevyjä, soijarouhekastiketta ja juustokastiketta.</li>
+                <li>Laita juustokastiketta sen verran, että kerros peittyy, mutta ei mitään överimääriä.</li>
+                <li>Tee näin seuraavat kerrokset. Laita päällimmäiseksi kerros lasagnelevyjä ja juustokastiketta.</li>
+                <li>Lisää juustoraaste pinnalle.</li> 
+                <li>Paista lasagnea uunissa noin 45 minuuttia.</li>
+                <li>Anna vetäytyä kevyesti foliolla peitettynä vähintään 15 minuuttia ennen tarjoamista</li>
+              </ol>
+            </section>
+          </section>
+        </section>
+      <!--This is where Lasagne recipe ends-->
+    </main>
+    <!--Space for Copyright, links and other general info-->
+    <footer>
+      <p>Copyright Kevin 2025</p>
+    </footer>
+  </body>
+</html>
