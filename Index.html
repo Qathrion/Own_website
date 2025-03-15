@@ -3,18 +3,16 @@
   <!--
 To do:
 - Table adjusts to screen
-- Auto replace words when renaming?
-- Pages that open below for example the menu? Not having to copy code to all pages
+- Have the scroll bar on the rigth not move the menu
 - Have the menu part of where youre currently at be a different color
 -->
-
   <head>
     <meta charset="utf-8" />
-    <!--Eczar font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fonts Cormorant Garamond and Proza Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
     <!--Update this to change the website's name-->
     <meta name="description" content="Kevin's Mega list website " />
 
@@ -23,7 +21,8 @@ To do:
 
     <title>Kevin's Website</title>
     <!--Linking to the css page for styling-->
-    <link rel="stylesheet" href="index-styles.css" />
+    <link rel="stylesheet" href="page-index-styles.css" />
+    
 
     <!--This puts the menu bar in place COMMENT THIS AT WORK
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -32,7 +31,6 @@ To do:
 
   <body>
     <header>
-      <h1>Welcome to Kevin's Website!</h1>
       <!--Here starts the menu/navbar COMMENT THIS AT WORK
       <div id="nav-placeholder"></div>
 
@@ -60,9 +58,9 @@ To do:
       </nav>
       <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
     </header>
-    <main id="body-default">
+    <main>
       <!--This sections contains all recipes-->
-      <section class="all-recipes-container">
+      <section>
         <!--This is where Mustikkapiirakka recipe starts-->
         <section class="resepti">
           <h3 class="food-name" id="Mustikkapiirakka">Mustikkapiirakka</h3>

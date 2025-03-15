@@ -6,8 +6,11 @@ To do:
 -->
   <head>
     <meta charset="utf-8" />
-        <!--Eczar font-->
-        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+    <!-- Fonts Cormorant Garamond and Proza Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
     <!--Update this to change the website's name-->
     <meta name="description" content="Kevin's Mega list website " />
 
@@ -16,7 +19,7 @@ To do:
 
     <title>Kevin's Website</title>
     <!--Linking to the css page for styling-->
-    <link rel="stylesheet" href="lists-styles.css" />
+    <link rel="stylesheet" href="page-lists-styles.css" />
 
     <!--This puts the menu bar in place COMMENT THIS AT WORK
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -25,7 +28,6 @@ To do:
 
   <body>
     <header>
-      <h1>Welcome to Kevin's Website!</h1>
       <!--Here starts the menu/navbar COMMENT THIS AT WORK
       <div id="nav-placeholder"></div>
 
@@ -36,20 +38,21 @@ To do:
       </script>
       Here ends the menu/navbar COMMENT THIS AT WORK-->
 
-      <!--Here starts the menu/navbar COMMENT THIS AT HOME-->      
+      <!--Here starts the menu/navbar COMMENT THIS AT HOME-->
       <nav class="menu-bar">
-        <a id="menu-home" href="home.html">Home</a>
-               <div class="dropdown-recipes">
-                <a href="index.html">Recipes</a>
-                    <div class="dropdown-content">
-                        <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
-                        <a href="index.html#Banana bread">Banana bread</a>
-                    </div>
-                </div>
-                <a href="photos.html">Pictures</a>
-                <a href="lists.html">Lists</a>
-               <a href="contact.html">Contact Form</a>
-    </nav>
+        <a id="menu-anchor" href="home.html">Home</a>
+        <div class="dropdown-recipes">
+          <a id="menu-anchor" href="index.html">Recipes</a>
+          <div class="dropdown-content">
+            <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
+            <a href="index.html#Banana bread">Banana bread</a>
+            <a href="index.html#Lasagne">Lasagne</a>
+          </div>
+        </div>
+        <a id="menu-anchor" href="photos.html">Pictures</a>
+        <a id="menu-anchor" href="lists.html">Lists</a>
+        <a id="menu-anchor" href="contact.html">Contact Form</a>
+      </nav>
       <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
     </header>
     <main id="body-default">

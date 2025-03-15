@@ -1,0 +1,74 @@
+/*  . = class,    # = id, nothing before it when its an element of the code */
+
+@import url(styles/menu-styles.css);
+@import url(styles/footer-styles.css);
+/* === THIS ADJUSTS THE BASIS OF EVERYTHING === */
+* {
+  margin: 0;
+}
+
+html {
+  font-family: "Proza Libre";
+  color: #deb992;
+}
+
+/* === EVERYTHING IN THE BODY === */
+
+body {
+  background-image: url(assets/images/black_sand.jpg);
+  background-size: cover;
+}
+
+/* Gib info */
+.contact-form h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.contact-form {
+  border: 5px solid #1ba098;
+  border-radius: 25px;
+  background-size: cover;
+  padding: 30px 10px;
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+}
+
+/* Uses flex box to align most labels and inputs in the contact form */
+.input-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.labels {
+  width: 200px;
+}
+
+input, textarea {
+  background-color : #d9dace; 
+}
+
+input[type=submit] {
+  border: none;
+  width: 12vw;
+  height: 3vh;
+  background-color: #051622;
+  color: #deb992;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #1ba098;
+  border-radius: 25px;
+}
+
+/* (NOT) sell info */
+.contact-form h6 {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  color: rgb(194, 194, 194);
+  margin-top: 5px;
+}

@@ -1,0 +1,12 @@
+html {
+    font-family: "Proza Libre";
+    color: #deb992;
+  }
+
+/* FOOTER */
+footer  {
+    border-top: 1px solid black;
+    margin: 10px auto;
+    text-align: center;
+    width: 35vw;
+}
