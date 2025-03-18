@@ -5,6 +5,7 @@ To do:
 - Table adjusts to screen
 - Have the scroll bar on the rigth not move the menu
 - Have the menu part of where youre currently at be a different color
+- NEED NODE.js TO BE ABLE TO RUN JAVASCRIPT
 -->
   <head>
     <meta charset="utf-8" />
@@ -22,11 +23,6 @@ To do:
     <title>Kevin's Website</title>
     <!--Linking to the css page for styling-->
     <link rel="stylesheet" href="page-index-styles.css" />
-    
-
-    <!--This puts the menu bar in place COMMENT THIS AT WORK
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    This puts the menu bar in place COMMENT THIS AT WORK-->
   </head>
 
   <body>
@@ -43,18 +39,23 @@ To do:
 
       <!--Here starts the menu/navbar COMMENT THIS AT HOME-->
       <nav class="menu-bar">
-        <a id="menu-anchor" href="home.html">Home</a>
+        <a id="menu-anchor" href="../Own_website-main/home.html">Home</a>
         <div class="dropdown-recipes">
-          <a id="menu-anchor" href="index.html">Recipes</a>
+          <a id="menu-anchor" href="../Own_website-main/index.html">Recipes</a>
           <div class="dropdown-content">
-            <a href="index.html#Mustikkapiirakka">Mustikkapiirakka</a>
-            <a href="index.html#Banana bread">Banana bread</a>
-            <a href="index.html#Lasagne">Lasagne</a>
+            <a href="../Own_website-main/index.html#Mustikkapiirakka">Mustikkapiirakka</a>
+            <a href="../Own_website-main/index.html#Banana bread">Banana bread</a>
+            <a href="../Own_website-main/index.html#Lasagne">Lasagne</a>
           </div>
         </div>
-        <a id="menu-anchor" href="photos.html">Pictures</a>
-        <a id="menu-anchor" href="lists.html">Lists</a>
-        <a id="menu-anchor" href="contact.html">Contact Form</a>
+        <a id="menu-anchor" href="../Own_website-main/photos.html">Pictures</a>
+        <div class="dropdown-recipes">
+        <a id="menu-anchor" href="../Own_website-main/lists.html">Lists</a>
+          <div class="dropdown-content">
+            <a href="../Own_website-main/lists/tv_shows.html">TV shows</a>
+          </div>
+        </div>
+        <a id="menu-anchor" href="../Own_website-main/contact.html">Contact Form</a>
       </nav>
       <!--Here ends the menu/navbar COMMENT THIS AT HOME-->
     </header>

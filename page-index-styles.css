@@ -24,6 +24,17 @@ body {
 
 /* === RECIPES === */
 
+/* The box that contains the individual recipe */
+.resepti {
+    background-image: url(assets/images/Starry_sky.jpg);
+    background-size: cover;
+    border: 5px solid #1ba098;
+    border-radius: 25px;
+    padding: 10px 20px 20px 10px;
+    margin: 20px auto;
+    width: 45vw;
+}
+
 /* Just the food name */
 .food-name {
     font-size: 50px;
@@ -38,17 +49,6 @@ body {
     font-size: 30px;
     font-style: bold;
     text-align: center;
-}
-
-/* The box that contains the individual recipe */
-.resepti {
-    background-image: url(assets/images/Starry_sky.jpg);
-    background-size: cover;
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 10px 20px 20px 10px;
-    margin: 20px auto;
-    width: 45vw;
 }
 
 /* === TABLE IN RECIPE === */
