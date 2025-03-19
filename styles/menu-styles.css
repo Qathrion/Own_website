@@ -22,6 +22,7 @@
 .dropdown-recipes {
     position: relative;
     display: inline-block;
+    z-index: 1;
   }
  
   
