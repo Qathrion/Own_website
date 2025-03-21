@@ -2,15 +2,7 @@
 
 @import url(styles/menu-styles.css);
 @import url(styles/footer-styles.css);
-/* === THIS ADJUSTS THE BASIS OF EVERYTHING === */
-* {
-    margin: 0;
-}
-
-html {
-    font-family: "Proza Libre";
-    color: #deb992;
-  }
+@import url(styles/global.css);
 
 /* === EVERYTHING IN THE BODY === */
 
@@ -49,19 +41,20 @@ body {
     font-size: 30px;
     font-style: bold;
     text-align: center;
+    margin: 10px auto;
 }
 
 /* === TABLE IN RECIPE === */
 #table-col-1 {
-    width: 4vw;
+    width: 5rem;
 }
 
 #table-col-2 {
-    width: 8vw;
+    width: 10rem;
 }
 
 table {
-    width: 30vw;
+    width: 35rem;
 }
 
 table,

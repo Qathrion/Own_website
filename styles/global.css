@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: "Proza Libre";
+    color: #deb992;
+    font-size: 1.2rem;
+  }
+
+
+/* pushes the content down to give space for the menu bar */
+main {
+    margin-top: 90px;;
+}

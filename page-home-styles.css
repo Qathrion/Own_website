@@ -2,15 +2,7 @@
 
 @import url(styles/menu-styles.css);
 @import url(styles/footer-styles.css);
-/* === THIS ADJUSTS THE BASIS OF EVERYTHING === */
-* {
-    margin: 0;
-}
-
-html {
-  font-family: "Proza Libre";
-  color: #deb992;
-}
+@import url(styles/global.css);
 
 body {
   background-image: url(assets/images/black_sand.jpg);
